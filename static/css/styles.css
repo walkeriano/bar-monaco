@@ -1,0 +1,132 @@
+.container {
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-section {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: black;
+  border-radius: 0px 0px 40px 40px;
+}
+
+.logo-monaco-header {
+  width: 75px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.btn-menu {
+  width: 42px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-menu:hover {
+  background-color: white;
+  color: black;
+}
+
+.btn-menu img {
+  width: 18px;
+}
+
+.logo-monaco {
+  width: 150px;
+}
+
+.main-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.first-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 5px 20px;
+  margin-top: 25px;
+}
+
+.first-section h1 {
+  width: 90%;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.first-section h2 {
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.second-section {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(238, 238, 238);
+  border-radius: 25px;
+  position: relative;
+  padding: 100px 10px 30px 10px;
+  margin-top: 70px;
+  gap: 20px;
+  border: 1px solid rgb(221, 221, 221);
+}
+
+.box-logo {
+  position: absolute;
+  top: -70px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.second-section .logo-gremio {
+  width: 130px;
+  border-radius: 30px;
+}
+
+.second-section h3 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  width: 85%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(83, 83, 83);
+}
+
+.second-section h4 {
+  width: 85%;
+  text-align: center;
+  letter-spacing: 0.5px;
+  line-height: 1.1;
+    color: grey;
+}
