@@ -78,3 +78,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   cambiarIdioma(idiomaGuardado);
 });
+
+
+// ---------------- LOADER ----------------
+document.addEventListener("DOMContentLoaded", () => {
+  const loader = document.getElementById("loader");
+  const contenido = document.getElementById("contenido");
+
+  // Duración del loader (en milisegundos)
+  const DURACION_LOADER = 3500; // 2.5 segundos
+
+  setTimeout(() => {
+    loader.classList.add("oculto");
+    contenido.style.display = "block";
+  }, DURACION_LOADER);
+});
