@@ -27,12 +27,15 @@ html {
   justify-content: space-between;
   background-color: black;
   border-radius: 0px 0px 40px 40px;
+  position: fixed;
+  top: 0px;
+  z-index: 100000;
 }
 
 .logo-monaco-header {
-  width: 120px;
+  width: 140px;
   border-radius: 50%;
-  margin-top: 60px;
+  margin-top: 80px;
   border: 5px solid black;
 }
 
@@ -102,6 +105,7 @@ html {
   align-items: center;
   justify-content: center;
   gap: 25px;
+  margin-top: 120px;
 }
 
 .first-section {
@@ -225,6 +229,7 @@ html {
 .section-all-info {
   border: 1px solid red;
   margin-bottom: 100px;
+  margin-top: 50px;
   width: 85%;
   display: flex;
   flex-direction: column;
