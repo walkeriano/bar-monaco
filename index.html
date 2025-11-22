@@ -9,6 +9,9 @@
   </head>
   <body class="container">
     <header class="header-section">
+      <button class="btn-wss">
+        <img src="/static/img/wss.png" alt="icon-menu" />
+      </button>
       <img
         src="/static/img/logo-monaco.jpg"
         alt="logo-monaco"
@@ -20,18 +23,22 @@
     </header>
     <main class="main-section">
       <section class="first-section">
-        <h1>Carta / Ficha de alérgenos</h1>
-        <h2>Mónaco - Bar & Restaurante</h2>
+        <h1 id="titulo-principal"></h1>
+        <h2 id="subtitulo-principal"></h2>
       </section>
       <section class="menu-idiomas">
-        <div>
+        <div data-lang="es">
           <p>Español 🇪🇸</p>
         </div>
-        <div>
+        <div data-lang="cat">
           <p>Catalán</p>
-          <img src="/static/img/bandera-cat.png" alt="bandera-catalana" class="icon-bandera">
+          <img
+            src="/static/img/bandera-cat.png"
+            alt="bandera-catalana"
+            class="icon-bandera"
+          />
         </div>
-        <div>
+        <div data-lang="en">
           <p>Ingles 🇺🇸</p>
         </div>
       </section>
@@ -43,14 +50,15 @@
             class="logo-gremio"
           />
         </div>
-
-        <h3>Avis per a les persones amb al lèrgies o intoleràncies:</h3>
-        <h4>
-          Aquest establiment tè a disposició del seus clients informació dels
-          plats que ofereix, Consulteu al nostre personal.
-        </h4>
+        <h3 id="titulo-intro"></h3>
+        <h4 id="texto-intro"></h4>
+      </section>
+      <section>
+        <h3>Especificaciones de alimentos</h3>
+        <section></section>
       </section>
     </main>
     <footer class="footer-section"></footer>
+    <script src="static/js/script.js" defer></script>
   </body>
 </html>

@@ -12,19 +12,19 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
   background-color: black;
   border-radius: 0px 0px 40px 40px;
 }
 
 .logo-monaco-header {
-  width: 75px;
+  width: 120px;
   border-radius: 50%;
-  margin-left: 20px;
+  margin-top: 60px;
+  border: 5px solid black;
 }
 
 .btn-menu {
-  width: 42px;
+  width: 50px;
   aspect-ratio: 1;
   border-radius: 50%;
   border-radius: 50%;
@@ -37,6 +37,36 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.btn-wss {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 151, 0);
+  border: 1px solid rgb(0, 222, 0);
+  margin-left: 20px;
+  position: relative;
+}
+
+.btn-wss img {
+  width: 25px;
+}
+
+.btn-wss::after{
+  content: "";
+  position: absolute;
+  width: 10px;
+  aspect-ratio: 1;
+  top: 0px;
+  right: 3px;
+  background-color: rgb(0, 222, 0);
+  border-radius: 50%;
+  z-index: 100;
 }
 
 .btn-menu:hover {
@@ -69,7 +99,7 @@
   justify-content: space-between;
   gap: 10px;
   padding: 5px 20px;
-  margin-top: 25px;
+  margin-top: 60px;
 }
 
 .first-section h1 {
@@ -131,8 +161,7 @@
   color: grey;
 }
 
-
-.menu-idiomas{
+.menu-idiomas {
   border: 1px solid black;
   display: flex;
   align-items: center;
@@ -140,7 +169,7 @@
   border-radius: 50px;
 }
 
-.menu-idiomas div{
+.menu-idiomas div {
   border: 1px solid transparent;
   padding: 10px 12px;
   border-radius: 50px;
@@ -148,25 +177,33 @@
   align-items: center;
   justify-content: center;
   gap: 5px;
+  transition: all 0.2s ease;
+  cursor: pointer;
 }
 
-.menu-idiomas div:hover{
+.menu-idiomas div.active-lang {
   background-color: black;
 }
 
+.menu-idiomas div:hover {
+  background-color: black;
+}
 
-.menu-idiomas div p{
+.menu-idiomas div p {
   font-size: 0.9rem;
   letter-spacing: 0.5px;
   color: rgb(84, 84, 84);
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
-.menu-idiomas div:hover p{
+.menu-idiomas div:hover p {
   color: white;
 }
 
-.icon-bandera{
+.menu-idiomas div.active-lang p {
+  color: white;
+}
+
+.icon-bandera {
   width: 16px;
 }
